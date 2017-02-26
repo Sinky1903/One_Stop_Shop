@@ -11,21 +11,43 @@ public class Customer implements Payable {
     private ArrayList<String> methods;
     private double funds;
 
-public Customer(ArrayList methods, double funds) {
-    methods = new ArrayList<String>();
-    setUpMethods();
-
-}
-
-    public double getFunds() {
-        return funds;
+    //    constructor
+    public Customer(ArrayList methods, double funds) {
+        methods = new ArrayList<String>();
+        setUpMethods();
     }
 
-    public void setFunds(double funds) {
-        this.funds = funds;
+    //    copy of ArrayList
+        public ArrayList<String> getMethods() {
+            return new ArrayList<String>(methods);
+    }
+
+    //    methods
+    public int getLength() {
+        return methods.size();
+    }
+
+    public String getMethodsAtIndex() {
+        return methods.get(index);
     }
 
     public String getPaymentMethod() {
 
     }
+
+    private void setUpMethods() {
+
+    }
+
+//    getters
+    public double getFunds() {
+        return funds;
+    }
+
+//    setters
+    public void setFunds(double funds) {
+        this.funds = funds;
+    }
+
+
 }
