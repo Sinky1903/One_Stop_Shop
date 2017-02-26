@@ -27,12 +27,12 @@ public class Customer implements Payable {
         return methods.size();
     }
 
-    public String getMethodsAtIndex(int index) {
+    public String getPaymentMethodAtIndex(int index) {
         return methods.get(index);
     }
 
     public String getPaymentMethod() {
-
+        return "Not ready";
     }
 
     private void setUpMethods() {

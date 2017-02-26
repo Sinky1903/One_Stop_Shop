@@ -22,8 +22,8 @@ public class TestCustomer {
     public void before() {
         methodList = new ArrayList<String>();
         methodList.add("Credit Card");
-        methodList.add("Debit Card");
-        methodList.add("Paypal");
+//        methodList.add("Debit Card");
+//        methodList.add("Paypal");
         customer = new Customer(25.0);
     }
 
@@ -33,6 +33,12 @@ public class TestCustomer {
     }
 
     public void testGetPaymentMethod() {
-        assertEquals("Credit Card", payment.getMethodsAtIndex(0));
+        assertEquals("Credit Card", payment.getPaymentMethodAtIndex(0));
     }
+
+    public void testGetPaymentMethodAtIndex() {
+        assertEquals("Credit Card", payment.);
+    }
+
+
 }

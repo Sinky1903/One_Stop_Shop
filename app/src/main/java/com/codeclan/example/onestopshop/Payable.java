@@ -6,6 +6,6 @@ package com.codeclan.example.onestopshop;
 
 public interface Payable {
 
-    public String getPaymentMethod();
+    String getPaymentMethod();
 
 }
