@@ -27,7 +27,7 @@ public class Customer implements Payable {
         return methods.size();
     }
 
-    public String getMethodsAtIndex() {
+    public String getMethodsAtIndex(int index) {
         return methods.get(index);
     }
 
