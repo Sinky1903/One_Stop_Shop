@@ -9,11 +9,10 @@ import java.util.ArrayList;
 public class Customer implements Payable {
 
     private ArrayList<String> methods;
-    private double funds;
+    private Double funds;
 
     //    constructor
-    public Customer(ArrayList methods, double funds) {
-        methods = new ArrayList<String>();
+    public Customer(ArrayList<String> methods, double funds) {
         setUpMethods();
     }
 
