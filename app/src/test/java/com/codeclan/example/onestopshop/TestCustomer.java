@@ -29,15 +29,19 @@ public class TestCustomer {
 
     @Test
     public void testGetLength() {
-        assertEquals(3, payment.getMethods().size());
+        assertEquals(3, customer.getMethods().size());
     }
 
     public void testGetPaymentMethod() {
-        assertEquals("Credit Card", payment.getPaymentMethodAtIndex(0));
+        assertEquals("Credit Card", customer.getPaymentMethodAtIndex(0));
     }
 
-    public void testGetPaymentMethodAtIndex() {
-        assertEquals("Credit Card", payment.);
+    public void testGetDebitCard() {
+        assertEquals("Debit Card", debitcard.getPaymentMethod());
+    }
+
+    public void testGetCreditCard() {
+        assertEquals("Debit Card", debitcard.getPaymentMethod());
     }
 
 
